@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/images/icon.png.png">
   <title>Simple Responsive Image Gallery</title>
   <meta name="description" content="Small, accessible, easy-to-read gallery with lightbox, keyboard navigation and lazy-loading." />
   <link rel="stylesheet" href="style.css">
@@ -22,7 +23,10 @@
     </header>
 
     <main class="gallery" id="gallery" aria-live="polite">
-      <figure class="card" tabindex="0" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop" data-title="Mountain View" data-caption="A quiet road through the mountains"> 
+      <figure class="card" tabindex="0" 
+        data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop" 
+        data-title="Mountain View" 
+        data-caption="A quiet road through the mountains"> 
         <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600&auto=format&fit=crop')" aria-hidden="true"></div>
         <figcaption class="caption">
           <span>Mountain View</span>
@@ -85,7 +89,43 @@
           <span class="meta">8/8</span>
         </figcaption>
       </figure>
+      <figure class="card" tabindex="0" data-full="https://visitbulgaria.com/wp-content/uploads/2020/imported/310_1.jpg" data-title="The Devil's bridge" data-caption="Located in Bulgaria">
+        <div class="thumb" style="background-image:url('https://visitbulgaria.com/wp-content/uploads/2020/imported/310_1.jpg')" aria-hidden="true"></div>
+        <figcaption class="caption">
+          <span>The Devil's bridge</span>
+          <span class="meta">8/8</span>
+        </figcaption>
+      </figure>
+      <figure class="card" tabindex="0" data-full="https://delo.bg/wp-content/uploads/2016/02/panaroma-1.jpg" data-title="View from 'Eagle's eye ramp'" data-caption="Located in The Rhodope Mountains, Bulgaria">
+        <div class="thumb" style="background-image:url('https://delo.bg/wp-content/uploads/2016/02/panaroma-1.jpg')" aria-hidden="true"></div>
+        <figcaption class="caption">
+          <span>Eagle's eye panorama</span>
+          <span class="meta">8/8</span>
+        </figcaption>
+      </figure>
+      
+      
     </main>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        This gallery is built to be simple, responsive, and accessible. 
+        You can navigate with your keyboard, shuffle images, and enjoy a clean viewing experience.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        Have feedback? Reach out at 
+        <a href="mailto:stu2501322007@uni-plovdiv.bg">stu2501322007@uni-plovdiv.bg</a>
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Simple Image Gallery · Built at Plovdiv Uni.</p>
+    </footer>
 
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
       <div class="lb-inner" role="document">
